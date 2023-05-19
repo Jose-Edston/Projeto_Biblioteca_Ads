@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="card">
+        <div class="info">
+            <p>{{books.title}}</p>
+            <p>{{books.author}}</p>
+            <div class="description">
+                <p>{{books.description}}</p>
+            </div>
+            <p>{{books.release_year}}</p>
+        </div>
+        <div class="btn">
+            <a href="">Apagar</a>
+            <a href="">Editar</a>
+        </div>
+    </div>
+</body>
+</html>
+
